@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { X, ArrowLeft, ChevronLeft, ChevronRight, Download } from 'lucide-react';
 import { ThemeColor } from '../App';
 
@@ -18,6 +18,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
   title
 }) => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [videoLoading, setVideoLoading] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   if (!isOpen) return null;
@@ -96,6 +97,11 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
         <div className="absolute inset-0 flex items-center justify-center p-4 pt-24 pb-8">
           {isVideo ? (
             <div className="relative w-full h-full flex items-center justify-center">
+              {videoLoading && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin"></div>
+                </div>
+              )}
               <video
                 ref={videoRef}
                 key={currentMedia}
@@ -105,8 +111,12 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
                 playsInline
                 loop
                 preload="auto"
+                crossOrigin="anonymous"
                 className="max-w-full max-h-full object-contain"
                 style={{ width: '90vw', maxHeight: '80vh' }}
+                onLoadStart={() => setVideoLoading(true)}
+                onCanPlay={() => setVideoLoading(false)}
+                onError={() => setVideoLoading(false)}
               >
                 <source src={currentMedia} type="video/mp4" />
                 Your browser does not support the video tag.
