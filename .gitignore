@@ -30,3 +30,10 @@ fix-dates.sh
 # Client data - photos, videos, and media files (keep README for documentation)
 data/*
 !data/README.md
+
+# Private setup instructions
+SETUP_PRIVATE.md
+links.txt
+urls.txt
+google-drive-links.txt
+extracted-file-ids.txt
