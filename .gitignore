@@ -27,5 +27,6 @@ dist-ssr
 deploy-with-history.ps1
 fix-dates.sh
 
-# Client data - photos, videos, and media files
-data/
+# Client data - photos, videos, and media files (keep README for documentation)
+data/*
+!data/README.md
