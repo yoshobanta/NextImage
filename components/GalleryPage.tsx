@@ -59,18 +59,6 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
     const currentMedia = images[selectedImage];
     const isVideo = currentMedia?.endsWith('.mp4');
 
-    // Unmute video when play is clicked
-    useEffect(() => {
-      const video = videoRef.current;
-      if (video && isVideo) {
-        const handlePlay = () => {
-          video.muted = false;
-        };
-        video.addEventListener('play', handlePlay);
-        return () => video.removeEventListener('play', handlePlay);
-      }
-    }, [isVideo, currentMedia]);
-
     return (
       <div className="fixed inset-0 z-[9999] bg-black">
         {/* Header */}
@@ -104,21 +92,26 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
           </div>
         </div>
 
-        {/* Main Image */}
-        <div className="absolute inset-0 flex items-center justify-center p-4 pt-24">
+        {/* Main Media */}
+        <div className="absolute inset-0 flex items-center justify-center p-4 pt-24 pb-8">
           {isVideo ? (
-            <video
-              ref={videoRef}
-              key={currentMedia}
-              src={currentMedia}
-              controls
-              autoPlay
-              playsInline
-              loop
-              className="max-w-full max-h-full object-contain"
-              style={{ minWidth: '50vw', minHeight: '50vh' }}
-              onError={(e) => console.error('Video load error:', e)}
-            />
+            <div className="relative w-full h-full flex items-center justify-center">
+              <video
+                ref={videoRef}
+                key={currentMedia}
+                controls
+                autoPlay
+                muted
+                playsInline
+                loop
+                preload="auto"
+                className="max-w-full max-h-full object-contain"
+                style={{ width: '90vw', maxHeight: '80vh' }}
+              >
+                <source src={currentMedia} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           ) : (
             <img
               src={currentMedia}
