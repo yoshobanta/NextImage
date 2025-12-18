@@ -112,9 +112,12 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
               key={currentMedia}
               src={currentMedia}
               controls
-              muted
+              autoPlay
+              playsInline
               loop
               className="max-w-full max-h-full object-contain"
+              style={{ minWidth: '50vw', minHeight: '50vh' }}
+              onError={(e) => console.error('Video load error:', e)}
             />
           ) : (
             <img
