@@ -1,8 +1,11 @@
 {
-  "name": "next-image-lipu-photography-(main-branch)",
+  "name": "next-image-lipu-photography",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Premium Photography Portfolio & Booking Platform for Next Image - Lipu Photography",
+  "author": "Yoshobanta Bisoi & Chiranjeeb Das",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -2,32 +2,16 @@
 
 ## Privacy Notice
 
-This repository contains the source code for our photography portfolio website. For client privacy and professional reasons, actual client photos and videos are **not included** in this public repository.
+This directory contains configuration files for the asset management system. For client privacy and confidentiality, actual media files (photos and videos) are hosted on a secure CDN and are **not included** in this repository.
 
-## Data Structure
+## Contents
 
-The application expects the following directory structure:
+- `assets.ts` - Asset loader configuration with local/external source switching
+- `external-assets.ts` - CDN URL configuration for production deployment
 
-```
-data/
-├── Landscape/
-│   ├── photo/          # Landscape photography
-│   └── videos/         # Landscape videography
-├── Potrate/
-│   ├── photo/          # Portrait photography
-│   └── videos/         # Portrait videography
-├── Editing/            # Photo/video editing samples
-├── Main/               # Main/featured content
-├── logo/               # Brand logos and assets
-└── assets.ts           # Asset loader configuration
-```
+## Note for Developers
 
-## For Development
-
-To run this project with your own media:
-
-1. Create the directory structure above
-2. Add your photos (`.jpg`, `.png`, `.webp`) and videos (`.mp4`) to the respective folders
+This project uses Cloudinary CDN for media hosting in production. The asset configuration automatically loads media from the CDN when deployed. For local development with custom media, contact the project maintainers.
 3. The application will automatically detect and load them using Vite's glob imports
 
 ## Demo Content

@@ -45,3 +45,9 @@ HOW_TO_GET_LINKS.md
 .env.cloudinary
 cloudinary-urls.json
 upload-to-cloudinary.js
+update-assets.js
+CLOUDINARY_SETUP.md
+
+# Utility tools
+bfg.jar
+*.jar
