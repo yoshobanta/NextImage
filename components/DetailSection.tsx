@@ -12,9 +12,10 @@ interface DetailSectionProps {
   description: string;
   images: string[]; // may include .mp4 sources
   allImages?: string[]; // Full collection for gallery modal
+  hidePortfolioButton?: boolean; // Hide the explore portfolio button
 }
 
-export const DetailSection: React.FC<DetailSectionProps> = ({ theme, title, description, images, allImages }) => {
+export const DetailSection: React.FC<DetailSectionProps> = ({ theme, title, description, images, allImages, hidePortfolioButton = false }) => {
   const [loadedImages, setLoadedImages] = useState<Record<number, boolean>>({});
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   
@@ -75,13 +76,15 @@ export const DetailSection: React.FC<DetailSectionProps> = ({ theme, title, desc
               {description}
             </p>
             
-            <button 
-              onClick={() => setIsGalleryOpen(true)}
-              className={`flex items-center justify-center gap-2 px-10 py-4 font-bold uppercase tracking-wider transition-all duration-300 group ${getButtonClasses()}`}
-            >
-              Explore Portfolio
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            {!hidePortfolioButton && (
+              <button 
+                onClick={() => setIsGalleryOpen(true)}
+                className={`flex items-center justify-center gap-2 px-10 py-4 font-bold uppercase tracking-wider transition-all duration-300 group ${getButtonClasses()}`}
+              >
+                Explore Portfolio
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            )}
           </div>
 
           {/* Image Grid */}

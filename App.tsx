@@ -209,6 +209,7 @@ const App: React.FC = () => {
               description="Our editing process is where the magic truly happens. We meticulously color grade every frame, remove distractions, and enhance the natural beauty of every shot, ensuring a consistent, high-end look."
               images={[editingImg1, editingImg2, editingImg3, ...(randomPhotoImagesRef.current.slice(4, 5).length ? randomPhotoImagesRef.current.slice(4, 5) : [editingImg1])]}
               allImages={[editingImg1, editingImg2, editingImg3, ...allPhotosRef.current]}
+              hidePortfolioButton={true}
             />
           </div>
         </div>
