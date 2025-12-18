@@ -63,7 +63,7 @@ if (ASSET_SOURCE === 'local') {
 }
 
 export const photos: string[] = ASSET_SOURCE === 'external' 
-  ? [...externalAssets.portrait.photos, ...externalAssets.landscape.photos, ...externalAssets.team]
+  ? [...externalAssets.portrait.photos, ...externalAssets.landscape.photos]
   : localPhotos;
 
 // ========== VIDEOS ==========

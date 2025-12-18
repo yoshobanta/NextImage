@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, Fragment } from 'react';
 // Centralized assets (supports both local and external/CDN hosting)
 import { heroImages, photos, videos } from './data/assets';
-import { externalAssets, portraitVideos, editingSamples } from './data/external-assets';
+import { externalAssets, portraitVideos, editingSamples, landscapeVideos } from './data/external-assets';
 
 // Stable hero assets sourced from centralized mapping
 const photoHeroImg = heroImages.photography;
@@ -24,7 +24,7 @@ import { Footer } from './components/Footer';
 
 // Video and editing assets from external CDN
 const ringCeremonyVideo = portraitVideos[4] || ''; // Ring_ceremony.mp4
-const editingBgVideo = portraitVideos[5] || ''; // Use a portrait video as background (editing video not uploaded)
+const editingBgVideo = landscapeVideos[0] || ''; // Use landscape video as background for editing section
 const editingImg1 = editingSamples[2] || ''; // Gemini_Generated_Image_dbh77dbh77dbh77d.png
 const editingImg2 = editingSamples[1] || ''; // Gemini_Generated_Image_dbh77dbh77dbh77d_1.png
 const editingImg3 = editingSamples[0] || ''; // edius-9-premier-video-editing-setup.jpg
