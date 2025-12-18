@@ -180,9 +180,17 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
                       muted
                       loop
                       playsInline
+                      preload="metadata"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      onMouseEnter={(e) => e.currentTarget.play()}
-                      onMouseLeave={(e) => e.currentTarget.pause()}
+                      onMouseEnter={(e) => e.currentTarget.play().catch(() => {})}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.pause();
+                        e.currentTarget.currentTime = 0;
+                      }}
+                      onLoadedData={(e) => {
+                        // Seek to 1 second to show a preview frame instead of black
+                        e.currentTarget.currentTime = 1;
+                      }}
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity">
                       <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
