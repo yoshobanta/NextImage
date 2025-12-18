@@ -37,3 +37,9 @@ links.txt
 urls.txt
 google-drive-links.txt
 extracted-file-ids.txt
+HOW_TO_GET_LINKS.md
+
+# Cloudinary credentials and scripts
+.env.cloudinary
+cloudinary-urls.json
+upload-to-cloudinary.js
