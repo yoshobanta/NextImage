@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, Fragment } from 'react';
-// Local hero background assets (mapped from data/Photos)
-import { heroImages } from './data/assets';
+// Centralized assets (supports both local and external/CDN hosting)
+import { heroImages, photos, videos } from './data/assets';
+import { externalAssets, portraitVideos, editingSamples } from './data/external-assets';
 
 // Stable hero assets sourced from centralized mapping
 const photoHeroImg = heroImages.photography;
@@ -8,11 +9,11 @@ const videoHeroImg = heroImages.videography;
 const editingHeroImg = heroImages.editing;
 const servicesHeroImg = heroImages.services;
 
-// Specific photography gallery images
-import photoGallery1 from './data/Potrate/photo/453378318_17975540726727544_7083501960782333712_n..webp';
-import photoGallery2 from './data/Potrate/photo/521537160_18020173661727544_6055208791923336978_n..webp';
-import photoGallery3 from './data/Potrate/photo/501916242_18014857937727544_2668610128395199689_n..webp';
-import photoGallery4 from './data/Potrate/photo/498110990_18013085372727544_8027766397253575609_n..webp';
+// Gallery images from external assets
+const photoGallery1 = externalAssets.portrait.photos[30] || photos[0] || '';
+const photoGallery2 = externalAssets.portrait.photos[91] || photos[1] || '';
+const photoGallery3 = externalAssets.portrait.photos[76] || photos[2] || '';
+const photoGallery4 = externalAssets.portrait.photos[71] || photos[3] || '';
 
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
@@ -20,11 +21,13 @@ import { DetailSection } from './components/DetailSection';
 import { Services } from './components/Services';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Footer } from './components/Footer';
-import ringCeremonyVideo from './data/Potrate/videos/Ring ceremony.mp4';
-import editingBgVideo from './data/Editing/e82d3cb1-8ae3-4327-b4ba-4d4710cf00c9.mp4';
-import editingImg1 from './data/Editing/Gemini_Generated_Image_dbh77dbh77dbh77d.png';
-import editingImg2 from './data/Editing/Gemini_Generated_Image_dbh77dbh77dbh77d(1).png';
-import editingImg3 from './data/Editing/edius-9-premier-video-editing-setup.jpeg';
+
+// Video and editing assets from external CDN
+const ringCeremonyVideo = portraitVideos[4] || ''; // Ring_ceremony.mp4
+const editingBgVideo = portraitVideos[5] || ''; // Use a portrait video as background (editing video not uploaded)
+const editingImg1 = editingSamples[2] || ''; // Gemini_Generated_Image_dbh77dbh77dbh77d.png
+const editingImg2 = editingSamples[1] || ''; // Gemini_Generated_Image_dbh77dbh77dbh77d_1.png
+const editingImg3 = editingSamples[0] || ''; // edius-9-premier-video-editing-setup.jpg
 
 export type ThemeColor = 'teal' | 'orange' | 'purple' | 'white';
 
@@ -47,48 +50,35 @@ const App: React.FC = () => {
   const allVideosRef = useRef<string[]>([]);
 
   useEffect(() => {
-    // Generate random local images for photography detail section once
+    // Use external assets (Cloudinary CDN) for photos
     if (randomPhotoImagesRef.current.length === 0) {
-      try {
-        const potrateModules = import.meta.glob('./data/Potrate/photo/*.{jpg,jpeg,png,webp}', { eager: true });
-        const landscapeModules = import.meta.glob('./data/Landscape/photo/*.{jpg,jpeg,png,webp}', { eager: true });
-        const paths = [...Object.values(potrateModules), ...Object.values(landscapeModules)]
-          .map((m: any) => m?.default)
-          .filter((p: any) => typeof p === 'string');
-        
-        // Store all photos for gallery
-        allPhotosRef.current = [...paths];
-        
-        // Shuffle paths for display
-        for (let i = paths.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [paths[i], paths[j]] = [paths[j], paths[i]];
-        }
-        randomPhotoImagesRef.current = paths.slice(0, 8); // take first 8
-      } catch (e) {
-        console.warn('Failed to load local photography images', e);
+      // Use photos from centralized assets (already includes portrait + landscape)
+      const paths = [...photos];
+      
+      // Store all photos for gallery
+      allPhotosRef.current = [...paths];
+      
+      // Shuffle paths for display
+      for (let i = paths.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [paths[i], paths[j]] = [paths[j], paths[i]];
       }
+      randomPhotoImagesRef.current = paths.slice(0, 8); // take first 8
     }
-    // Generate random local video clips for videography detail section once
+    
+    // Use external assets (Cloudinary CDN) for videos
     if (randomVideoClipsRef.current.length === 0) {
-      try {
-        const potrateVideoModules = import.meta.glob('./data/Potrate/videos/*.mp4', { eager: true });
-        const landscapeVideoModules = import.meta.glob('./data/Landscape/videos/*.mp4', { eager: true });
-        const vpaths = [...Object.values(potrateVideoModules), ...Object.values(landscapeVideoModules)]
-          .map((m: any) => m?.default)
-          .filter((p: any) => typeof p === 'string');
-        
-        // Store all videos for gallery
-        allVideosRef.current = [...vpaths];
-        
-        for (let i = vpaths.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [vpaths[i], vpaths[j]] = [vpaths[j], vpaths[i]];
-        }
-        randomVideoClipsRef.current = vpaths.slice(0, 4);
-      } catch (e) {
-        console.warn('Failed to load local video clips', e);
+      // Use videos from centralized assets (already includes portrait + landscape)
+      const vpaths = [...videos];
+      
+      // Store all videos for gallery
+      allVideosRef.current = [...vpaths];
+      
+      for (let i = vpaths.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [vpaths[i], vpaths[j]] = [vpaths[j], vpaths[i]];
       }
+      randomVideoClipsRef.current = vpaths.slice(0, 4);
     }
     // 1. Theme Observer (Detects which main section is active)
     const themeObserverOptions = {
