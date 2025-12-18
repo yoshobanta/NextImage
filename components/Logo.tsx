@@ -1,10 +1,12 @@
 
 import React from 'react';
 import { ThemeColor } from '../App';
-// Local raster logo assets
-import fullLogo from '../data/logo/full_logo.png';
-import shortLogo from '../data/logo/short_logo.png';
-import fullLogoBlack from '../data/logo/full_logo_black.png';
+// Logo assets from Cloudinary CDN
+import { externalAssets } from '../data/external-assets';
+
+const fullLogo = externalAssets.logos.fullLogo || '';
+const shortLogo = externalAssets.logos.shortLogo || '';
+const fullLogoBlack = externalAssets.logos.fullLogoBlack || '';
 
 interface LogoProps {
   className?: string;

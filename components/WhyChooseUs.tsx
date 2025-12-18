@@ -1,5 +1,8 @@
 import React from 'react';
-import ceoPhoto from '../data/Main/ceo.webp';
+import { externalAssets } from '../data/external-assets';
+
+// CEO photo from Cloudinary CDN
+const ceoPhoto = externalAssets.team[0] || '';
 
 interface Testimonial {
   quote: string;
