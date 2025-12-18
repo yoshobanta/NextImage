@@ -1,0 +1,205 @@
+// External Asset Configuration - Cloudinary
+// Auto-generated from cloudinary-urls.json
+// DO NOT EDIT MANUALLY - Run upload-to-cloudinary.js to regenerate
+
+export const getImageUrl = (url: string) => url;
+export const getVideoUrl = (url: string) => url;
+
+// ===== LANDSCAPE PHOTOS =====
+export const landscapePhotos = [
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065135/landscape/photos/001.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065138/landscape/photos/01.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065141/landscape/photos/01s.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065144/landscape/photos/01_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065147/landscape/photos/02_copy.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065150/landscape/photos/02_copy_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065738/landscape/photos/03.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065739/landscape/photos/03_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065742/landscape/photos/04.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065807/landscape/photos/06_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065819/landscape/photos/09_copy.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065829/landscape/photos/09_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065834/landscape/photos/09_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065854/landscape/photos/10h_copy.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065858/landscape/photos/10_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065920/landscape/photos/16.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065927/landscape/photos/2021-06-11.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065931/landscape/photos/IMG_3847.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065932/landscape/photos/photo_8.jpg',
+].map(getImageUrl);
+
+// ===== LANDSCAPE VIDEOS =====
+export const landscapeVideos = [
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766065936/landscape/videos/AQNJX2UvA-Zf8RJ-riSu3yC5oOIlz7TSlcyaeLewHGLKXY6PR8DDh-C1pAWrvfrKCwGqASEa_BDk265dRPhfhjiGd8Kc0PZ4.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766065941/landscape/videos/AQPBeiWsG8aQP4PGKROPoddjJzxk1mTGfJ3qCU43G03hYe9Hs9ZNxqpry_vN2Jimh6yMKUaAq9RM2ZaG7F0CP99-dQHDvU8y.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766065951/landscape/videos/AQPeVeEn0QRsdepARSdccl7dWVqRCMQf1TiNp399ALZb692y6x32pMs4bFc7iIlEkf0blGnnPt3cOGr3KZBg_m-09ECclOrp.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766065960/landscape/videos/AQPO4orp5yO7ApewzENDN9DObTk1z3vaZ3CXpuF6BAJkMPk_4ajYoZtzCVPl6o6IXRVZOfrP0XXKWLA0P_zGKcBXciN2V5cz.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766065971/landscape/videos/AQPZHY6HEaM1XW3wYRtT2sXPK_S5HYeFIcvsp9t2CYTfLgz6bUVgPEw8evUHjjgkJpthmLe1Fbkgd2pURmE6tWCPsZ8Fd8lb.mp4',
+].map(getVideoUrl);
+
+// ===== PORTRAIT PHOTOS =====
+export const portraitPhotos = [
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065997/portrait/photos/003.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766065999/portrait/photos/01.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066002/portrait/photos/01_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066005/portrait/photos/01_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066007/portrait/photos/02.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066009/portrait/photos/02_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066010/portrait/photos/02_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066012/portrait/photos/03.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066014/portrait/photos/03_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066015/portrait/photos/03_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066018/portrait/photos/04.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066020/portrait/photos/04_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066021/portrait/photos/04_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066023/portrait/photos/05.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066024/portrait/photos/05_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066027/portrait/photos/05_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066030/portrait/photos/06.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066031/portrait/photos/07.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066034/portrait/photos/07_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066035/portrait/photos/07_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066037/portrait/photos/07_3.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066039/portrait/photos/08.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066041/portrait/photos/08_1.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066043/portrait/photos/08_2.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066046/portrait/photos/08_3.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066048/portrait/photos/10.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066050/portrait/photos/11.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066054/portrait/photos/12.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066056/portrait/photos/386127692_311184334865829_5963597027407622873_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066057/portrait/photos/448740289_1616641159177975_1372803335800125817_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066058/portrait/photos/453378318_17975540726727544_7083501960782333712_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066059/portrait/photos/457152673_17979251246727544_1736276636421999636_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066061/portrait/photos/457154644_17979251228727544_4103987992250583665_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066062/portrait/photos/457258888_17979251237727544_5857959144728442819_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066063/portrait/photos/457370992_17979619433727544_4000809787749990182_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066064/portrait/photos/457507468_17979619442727544_1932379198456277535_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066065/portrait/photos/457507527_17979619412727544_4744852471578135762_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066067/portrait/photos/457619029_17979619403727544_4023583428524735601_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066068/portrait/photos/457660972_17979619421727544_1067014024046773749_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066069/portrait/photos/458264064_17980302806727544_2106298466098771696_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066071/portrait/photos/458277009_17980302785727544_4712885211075070913_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066072/portrait/photos/458288585_17980302776727544_4725051513682173230_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066073/portrait/photos/458305494_17980302767727544_8844868583101875949_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066074/portrait/photos/459143032_545230044601018_5224932321140616613_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066075/portrait/photos/462166476_752107047056298_8533445129075802597_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066077/portrait/photos/462180478_828750612480899_7275767582198709347_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066078/portrait/photos/462212663_1060783785429774_8279091405581549932_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066080/portrait/photos/463150512_351755344626028_835054036280473652_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066081/portrait/photos/463171855_349409024860432_1216886061682177374_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066082/portrait/photos/463205121_899368755026728_2045187013989913354_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066083/portrait/photos/463361776_561166539663296_6136001756065904005_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066085/portrait/photos/463392951_881487177021382_5350561982817247313_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066086/portrait/photos/465051628_3330410730424910_6286528051494258535_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066087/portrait/photos/465078186_2242923292754128_758509616222240147_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066088/portrait/photos/465084280_550815257530170_4888378293973821633_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066089/portrait/photos/465209496_1191852638552357_8379376946456924503_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066091/portrait/photos/465265019_872939368312440_3533235449813773111_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066092/portrait/photos/468594005_18055415353933213_6405034746933417826_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066093/portrait/photos/468594862_18055415194933213_6335897379915108704_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066094/portrait/photos/470697516_468342432981244_2938725597376440613_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066096/portrait/photos/489042189_18009120812727544_4824498514549000033_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066097/portrait/photos/489420158_18009120776727544_4318126333522132648_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066098/portrait/photos/489689670_18009120791727544_2447841057505912074_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066099/portrait/photos/489736490_18009120803727544_3206569283935200552_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066101/portrait/photos/497780547_18013085387727544_1459879389744848667_n._1.webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066102/portrait/photos/497780547_18013085387727544_1459879389744848667_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066103/portrait/photos/497842881_18013085408727544_7787258854247452890_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066104/portrait/photos/497850922_18013085396727544_2822286027957040625_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066105/portrait/photos/497900424_18013085399727544_5472169576569949852_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066107/portrait/photos/498110990_18013085372727544_8027766397253575609_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066108/portrait/photos/500131445_18014228384727544_7658435207456863091_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066109/portrait/photos/500703213_18014228420727544_5906298547660848711_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066111/portrait/photos/501915867_18014857952727544_7453027893439299811_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066112/portrait/photos/501916242_18014857937727544_2668610128395199689_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066113/portrait/photos/501954910_18014857964727544_4828262158755395479_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066114/portrait/photos/501966883_18014857955727544_2940054538534814037_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066115/portrait/photos/501981806_18014857973727544_455261559836333437_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066116/portrait/photos/516516358_18019180658727544_8822837907105871756_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066117/portrait/photos/516688937_18019180640727544_2932755710643669459_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066119/portrait/photos/516791932_18019180625727544_8236925818417506652_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066120/portrait/photos/516817801_18019180643727544_975841725240268359_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066122/portrait/photos/517001622_18019180661727544_6824123148259173581_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066123/portrait/photos/519061009_18020173697727544_4355612967627593347_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066124/portrait/photos/519484190_18020173679727544_3670022703924292936_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066126/portrait/photos/519970519_18020173688727544_8954230035722910380_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066128/portrait/photos/520804810_18020173670727544_2936502470284545418_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066129/portrait/photos/521537160_18020173661727544_6055208791923336978_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066130/portrait/photos/523717058_18021394751727544_799489649899583940_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066132/portrait/photos/523783176_18021394787727544_5742916942409121222_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066132/portrait/photos/523783181_18021394760727544_8410817438408642005_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066134/portrait/photos/524356852_18021394778727544_6394405644514290972_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066135/portrait/photos/524862766_18021394796727544_4249008568780385520_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066136/portrait/photos/525150663_18021394769727544_4283720176761152866_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066137/portrait/photos/528273808_18022834514727544_3761800907947334015_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066138/portrait/photos/528812507_18022834532727544_8418782517986348013_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066138/portrait/photos/529829347_18022834523727544_8359019490798960866_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066139/portrait/photos/530228352_18022834550727544_2655154876053857804_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066140/portrait/photos/530240185_18022834541727544_2128827118847966068_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066142/portrait/photos/533062011_18024068450727544_1179038191851273505_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066143/portrait/photos/534559216_18024068441727544_3278239614667382767_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066144/portrait/photos/534782098_18024068468727544_2845579546268280887_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066146/portrait/photos/534808506_18024068480727544_7871689265098287615_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066147/portrait/photos/535724353_18024068459727544_8868703525720498638_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066149/portrait/photos/538717162_18072926039041691_354153818355092068_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066150/portrait/photos/539845125_18072926048041691_3512303089513940192_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066151/portrait/photos/541510049_18025597265727544_3296070463425189212_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066152/portrait/photos/541728791_18025597244727544_2787545481060319381_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066153/portrait/photos/542241122_18073520282041691_1630374239965924020_n..jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066154/portrait/photos/542370144_18025597256727544_4786980461196644524_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066155/portrait/photos/555529306_18029351576727544_1564004530491554490_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066156/portrait/photos/556403420_18029351609727544_2914114709501212294_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066157/portrait/photos/569455814_18032556548727544_8506419884683234518_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066159/portrait/photos/572000949_18032556557727544_8188399385974796546_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066160/portrait/photos/572763861_18032556539727544_1656484846788126612_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066161/portrait/photos/573331600_18032556566727544_2575934670880483929_n..webp',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066163/portrait/photos/frame_02.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066164/portrait/photos/IMG_3856.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066166/portrait/photos/IMG_3863.jpg',
+].map(getImageUrl);
+
+// ===== PORTRAIT VIDEOS =====
+export const portraitVideos = [
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766066168/portrait/videos/AQMBwhlYR4p2J1CwoJve45TtZQocc7mt0B3rebXlOAB45ftVbweIHeB3jV4nBhKy2sqs9N7EQboDOYhDgIjCpcJ_l6GIzfqK.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766066173/portrait/videos/AQNlqpY6i1JbLM305sGQuBi1JIu5rSldT0OERMMB8LpAyI78Ww9MvXH4JnA1lxk9IhyPjIPLdI97hRtotL4y2GPvoJsb6hbX.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766066179/portrait/videos/AQO377aI1aBHZd5MVjCHEf7iFLrZlLvdkkOttNhyHLJy9j13FNzoxnbb3fp8-J3thxDLryutM3Alnfl90qP0ZGucaKSnJoJH.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766066184/portrait/videos/AQPKVh5GA9bH-_3M2xNm6rc-29IEQHMRjmvAoDOly1oRXT7oWmVGKgRUaUqD9QEk_0ysQNKL9kymLzxg9aYQwvT0n2T6hpDr.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766066187/portrait/videos/Ring_ceremony.mp4',
+  'https://res.cloudinary.com/dstf2qsgg/video/upload/v1766066206/portrait/videos/Sequence_02_1.mp4',
+].map(getVideoUrl);
+
+// ===== EDITING SAMPLES =====
+export const editingSamples = [
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066212/editing/edius-9-premier-video-editing-setup.jpg',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066213/editing/Gemini_Generated_Image_dbh77dbh77dbh77d_1.png',
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066215/editing/Gemini_Generated_Image_dbh77dbh77dbh77d.png',
+].map(getImageUrl);
+
+// ===== LOGOS =====
+export const logos = {
+  fullLogo: 'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066217/logos/full_logo.png',
+  fullLogoBlack: 'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066219/logos/full_logo_black.png',
+  shortLogo: 'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066224/logos/short_logo_fevicon.png',
+  favicon: '',
+};
+
+// ===== MAIN/TEAM PHOTOS =====
+export const teamPhotos = [
+  'https://res.cloudinary.com/dstf2qsgg/image/upload/v1766066216/main/ceo.jpg',
+].map(getImageUrl);
+
+// Export all assets
+export const externalAssets = {
+  landscape: {
+    photos: landscapePhotos,
+    videos: landscapeVideos,
+  },
+  portrait: {
+    photos: portraitPhotos,
+    videos: portraitVideos,
+  },
+  editing: editingSamples,
+  logos,
+  team: teamPhotos,
+};

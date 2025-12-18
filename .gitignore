@@ -27,9 +27,11 @@ dist-ssr
 deploy-with-history.ps1
 fix-dates.sh
 
-# Client data - photos, videos, and media files (keep README for documentation)
+# Client data - photos, videos, and media files (keep code files for build)
 data/*
 !data/README.md
+!data/assets.ts
+!data/external-assets.ts
 
 # Private setup instructions
 SETUP_PRIVATE.md
