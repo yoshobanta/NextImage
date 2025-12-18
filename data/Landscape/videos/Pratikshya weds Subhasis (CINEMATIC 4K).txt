@@ -1,6 +1,0 @@
-This video file is hosted on Google Drive due to its large size (801+ MB).
-
-Access the video here:
-https://drive.google.com/file/d/19wdNvHpuwiG9B1KTeIqkLKQiezoC3DZp/view?usp=drive_link
-
-Note: The actual video file is excluded from Git to comply with GitHub's 100MB file size limit.

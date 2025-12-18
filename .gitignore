@@ -27,5 +27,5 @@ dist-ssr
 deploy-with-history.ps1
 fix-dates.sh
 
-# Large video files (hosted externally)
-data/Landscape/videos/Pratikshya weds Subhasis (CINEMATIC 4K).mp4
+# Client data - photos, videos, and media files
+data/
